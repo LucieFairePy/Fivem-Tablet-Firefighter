@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr" data-theme="dark" data-motion="auto" data-contrast="normal">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#020a12">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description"
+        content="Tablette de secourisme : constantes vitales par tranche d'âge, conduites à tenir, urgences vitales et aides au bilan. Support pédagogique, fonctionne hors ligne.">
+
+  <title>Tablette secourisme</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/device.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script>
+
+    try {
+      var saved = JSON.parse(localStorage.getItem('tablette-bspp:v1') || '{}');
+      var root = document.documentElement;
+      if (saved.theme) root.dataset.theme = saved.theme;
+      if (saved.contrast) root.dataset.contrast = saved.contrast;
+      if (saved.motion) root.dataset.motion = saved.motion;
+    } catch (e) {
+
+    }
+  </script>
+</head>
+
+<body>
+
+  <noscript>
+    <div style="padding:2rem;font-family:system-ui;color:#eaf5fd;background:#020a12;min-height:100vh">
+      <h1>JavaScript est nécessaire</h1>
+      <p>Cette tablette construit ses fiches dynamiquement. Activez JavaScript pour l'utiliser.</p>
+    </div>
+  </noscript>
+
+  <div id="boot-fallback"
+       style="padding:2rem;font-family:system-ui;color:#eaf5fd;max-width:60ch;margin:4rem auto">
+    <h1 style="font-size:1.4rem">Chargement…</h1>
+    <p style="color:#9ab5c8;line-height:1.6;margin-top:1rem">
+      Si ce message reste affiché, la page a probablement été ouverte directement
+      depuis le disque (<code>file://</code>). Les modules JavaScript exigent un
+      serveur : lancez <code>serve.cmd</code>, ou démarrez la ressource depuis FiveM.
+    </p>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

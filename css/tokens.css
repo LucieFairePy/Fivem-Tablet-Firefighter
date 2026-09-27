@@ -1,0 +1,187 @@
+:root {
+
+  --brand-red: #e30027;
+  --brand-red-deep: #8d071b;
+  --brand-blue: #0079dc;
+  --brand-blue-deep: #064268;
+
+  --ok: #24c076;
+  --ok-bg: #0d3a24;
+  --ok-line: #1d8f58;
+
+  --warn: #f5a524;
+  --warn-bg: #452c05;
+  --warn-line: #b87c12;
+
+  --danger: #ff4d5e;
+  --danger-bg: #4a0a16;
+  --danger-line: #c22437;
+
+  --info: #38b6ff;
+  --info-bg: #06334c;
+  --info-line: #1b7fb5;
+
+  --low: #7aa5ff;
+  --low-line: #3f68c4;
+  --low-bg: #0d2450;
+
+  --accent-resp: #2e9bff;
+  --accent-spo2: #ff4d5e;
+  --accent-cardio: #ff7a3d;
+  --accent-tension: #24c076;
+  --accent-thermo: #a06bff;
+  --accent-glyc: #ffc42e;
+  --accent-neuro: #2fd0e0;
+  --accent-trc: #ff5fa2;
+  --accent-pupil: #8fa8c4;
+  --accent-douleur: #c266ff;
+  --accent-sedation: #4d86ff;
+
+  --font-sans: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Cascadia Mono", "SF Mono", Consolas, "Roboto Mono", monospace;
+
+  --fs-2xs: 0.75rem;
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: 1.75rem;
+  --fs-3xl: 2.25rem;
+
+  --lh-tight: 1.15;
+  --lh-snug: 1.35;
+  --lh-normal: 1.55;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  --tracking-wide: 0.06em;
+  --tracking-wider: 0.12em;
+
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+  --r-pill: 999px;
+
+  --sidebar-w: 248px;
+  --topbar-h: 68px;
+  --rail-w: 268px;
+  --content-max: 1560px;
+
+  --motion-scale: 1;
+  --d-instant: calc(90ms * var(--motion-scale));
+  --d-fast: calc(160ms * var(--motion-scale));
+  --d-base: calc(240ms * var(--motion-scale));
+  --d-slow: calc(380ms * var(--motion-scale));
+  --d-slower: calc(620ms * var(--motion-scale));
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.55, 0, 1, 0.45);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --z-base: 1;
+  --z-rail: 10;
+  --z-topbar: 20;
+  --z-sidebar: 30;
+  --z-backdrop: 40;
+  --z-modal: 50;
+  --z-toast: 60;
+}
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #020a12;
+  --bg-glow: radial-gradient(1200px 620px at 58% -18%, #12405f 0%, #071a29 42%, #020a12 88%);
+  --surface-1: #06151f;
+  --surface-2: #0a2032;
+  --surface-3: #0f2c42;
+  --surface-sunken: #04101a;
+
+  --line: #12374f;
+  --line-strong: #1d5e85;
+  --line-soft: #0d2637;
+
+  --text: #eaf5fd;
+  --text-muted: #9ab5c8;
+  --text-faint: #6d8ba1;
+  --text-invert: #041019;
+
+  --shadow-sm: 0 1px 2px #0009;
+  --shadow-md: 0 6px 18px #000a;
+  --shadow-lg: 0 18px 46px #000c;
+  --shadow-glow: 0 0 0 1px #ffffff0d inset;
+
+  --scrim: #020a12cc;
+  --skeleton: linear-gradient(90deg, #0a2032 0%, #12354d 50%, #0a2032 100%);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #eef3f8;
+  --bg-glow: radial-gradient(1200px 620px at 58% -18%, #ffffff 0%, #e4edf5 42%, #eef3f8 88%);
+  --surface-1: #ffffff;
+  --surface-2: #f6f9fc;
+  --surface-3: #eaf1f8;
+  --surface-sunken: #e2eaf2;
+
+  --line: #cfdce8;
+  --line-strong: #8fb3ce;
+  --line-soft: #e2eaf2;
+
+  --text: #0d2231;
+  --text-muted: #4a6478;
+  --text-faint: #6e8799;
+  --text-invert: #ffffff;
+
+  --ok-bg: #d9f5e6;
+  --warn-bg: #fdf0d6;
+  --danger-bg: #ffe0e4;
+  --info-bg: #daeefc;
+  --low-bg: #dfe8ff;
+
+  --shadow-sm: 0 1px 2px #0d223114;
+  --shadow-md: 0 6px 18px #0d22311f;
+  --shadow-lg: 0 18px 46px #0d223126;
+  --shadow-glow: 0 0 0 1px #0d223108 inset;
+
+  --scrim: #0d2231a8;
+  --skeleton: linear-gradient(90deg, #eaf1f8 0%, #f8fbfd 50%, #eaf1f8 100%);
+}
+
+[data-contrast="high"] {
+  --text-muted: var(--text);
+  --text-faint: var(--text);
+  --line: var(--line-strong);
+  --fs-2xs: 0.8125rem;
+  --fs-xs: 0.875rem;
+  --fs-sm: 0.9375rem;
+}
+
+[data-motion="reduced"] {
+  --motion-scale: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-scale: 0;
+  }
+}
